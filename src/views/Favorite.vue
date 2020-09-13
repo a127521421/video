@@ -10,7 +10,7 @@
           <p class="title">{{Favorite.title}}</p>
           <p class="description">{{Favorite.description}}</p>
         </div>
-        <button v-if="Favorite.Favorite" class="deleteFavoritebutton" @click="dele(Favorite)">
+        <button v-if="Favorite.Favorite" class="deleteFavoritebutton" @click="dele(idx)">
           <font-awesome-icon :icon="['fas', 'heart']" />
         </button>
       </div>
@@ -64,8 +64,8 @@ export default {
       }
       this.currPage = idx2
     },
-    dele (Favorite) {
-      this.$store.commit('deleVideo', Favorite)
+    dele (idx) {
+      this.$store.commit('deleVideo', idx)
     }
   },
   mounted () {}

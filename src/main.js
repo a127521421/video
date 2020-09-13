@@ -11,11 +11,11 @@ import VueAxios from 'vue-axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faAngleDoubleLeft, faAngleDoubleRight, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleLeft, faAngleDoubleRight, faHeart, faHome } from '@fortawesome/free-solid-svg-icons'
 
 import './style/style.styl'
 
-library.add(faAngleDoubleLeft, faAngleDoubleRight, faHeart)
+library.add(faAngleDoubleLeft, faAngleDoubleRight, faHeart, faHome)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // 讓 axios 預設會傳認證資訊，原本是不會傳
